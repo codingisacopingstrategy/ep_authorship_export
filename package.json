@@ -1,7 +1,12 @@
 {
   "name": "ep_authorship_export",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Export the authors",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/codingisacopingstrategy/ep_authorship_export.git"
+  },
+  "homepage" : "https://github.com/codingisacopingstrategy/ep_authorship_export",
   "author": "codingisacopingstrategy (Eric Schrijver) <eric@ericschrijver.nl>",
   "contributors": [],
   "dependencies": {},
