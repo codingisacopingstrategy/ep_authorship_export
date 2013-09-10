@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "client_hooks": {
+     },
+      "hooks": {
+        "getLineHTMLForExport": "ep_authorship_export/index"
+      }
+    }
+  ]
+}
