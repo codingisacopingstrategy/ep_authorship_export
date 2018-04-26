@@ -4,8 +4,11 @@ var Changeset = require("ep_etherpad-lite/static/js/Changeset");
 exports.getLineHTMLForExport = function (hook, context) {
     var author = _analyzeLine(context.attribLine, context.apool);
     if (author) {
-        return "<span class=\"author" + author.replace('.','_') + "\">" + context.text + "</span><br/>";
+        console.debug('EP_AUTORSHIP_EXPORT PRE', context.lineContent);
+        context.lineContent = "<span class=\"author" + author.replace('.','_') + "\">" + context.lineContent + "</span><br/>";
+        console.debug('EP_AUTORSHIP_EXPORT POST', context.lineContent);
     }
+    return true;
 }
 
 function _analyzeLine(alineAttrs, apool) {
